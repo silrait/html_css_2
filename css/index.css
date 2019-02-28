@@ -1,5 +1,19 @@
+html, body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  perspective: 6px;
+  perspective-origin: 50% 160px;
+}
+
 .foto-home{
   border-radius: 50%;
+}
+
+.titulo-principal, .palavras-home{
+  transform-style: preserve-3d;
 }
 
 .titulo-principal{
@@ -9,7 +23,6 @@
 
 .palavras-home{
   position: absolute;
-  perspective: 8px;
   top: 0;
   left: 0;
   width: 100%;
