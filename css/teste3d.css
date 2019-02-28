@@ -1,0 +1,52 @@
+body {
+  height: inherit;
+  perspective: 50%;
+  background: linear-gradient(45deg, #bbb, grey);
+}
+
+.cubo {
+  top: 25%;
+  left: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  /*transform: rotateZ(45deg);*/
+  /*transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);*/
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-10deg);
+}
+
+.face{
+  position: absolute;
+  transform-origin: center;
+  background-color: rgb(255, 0, 0);
+  width: 8em;
+  height: 8em;
+}
+
+.atras{
+  transform: translateZ(-4em);
+}
+
+.frente{
+  transform: translateZ(4em);
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+.direita{
+  transform: rotateY(90deg) translateZ(4em);
+}
+
+.esquerda{
+  rgba(225,225,0,0.8);
+  transform: rotateY(90deg) translateZ(-4em);
+}
+
+.topo{
+  background-color: rgba(0,255,0,0.8);
+  transform: rotateX(90deg) translateZ(4em);
+}
+
+.baixo{
+  background-color: rgba(0,0,255,0.8);
+  transform: rotateX(90deg) translateZ(-4em);
+}
